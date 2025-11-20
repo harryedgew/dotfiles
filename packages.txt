@@ -11,3 +11,4 @@ zsh
 synaptic
 papirus-icon-theme
 steam
+brave-browser
