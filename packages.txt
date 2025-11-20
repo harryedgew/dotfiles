@@ -8,3 +8,4 @@ thunderbird
 keepassxc
 exa
 zsh
+synaptic
