@@ -10,3 +10,4 @@ exa
 zsh
 synaptic
 papirus-icon-theme
+steam
