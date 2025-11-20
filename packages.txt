@@ -1,0 +1,10 @@
+git
+wget
+curl
+nvim
+vlc
+qbittorrent
+thunderbird
+keepassxc
+exa
+zsh
