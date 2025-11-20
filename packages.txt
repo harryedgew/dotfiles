@@ -9,3 +9,4 @@ keepassxc
 exa
 zsh
 synaptic
+papirus-icon-theme
