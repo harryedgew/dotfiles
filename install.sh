@@ -1,7 +1,18 @@
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-sudo curl -fsSLo /etc/apt/sources.list.d/brave-browser-release.sources https://brave-browser-apt-release.s3.brave.com/brave-browser.sources
-sudo add-apt-repository ppa:papirus/papirus
-sudo add-apt-repository multiverse
-sudo apt-get update
-sudo apt-get upgrade
-xargs sudo apt-get -y install < packages.txt
+sudo dnf up -y
+
+#Steam
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
+
+# Brave
+sudo dnf install dnf-plugins-core -y
+sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+
+#Install packages
+xargs sudo dnf install -y < packages.txt
+
+#Zsh plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+sudo mkdir /usr/share/zsh/plugins
+sudo mv ~/zsh-autosuggestions ~/zsh-syntax-highlighting /usr/share/zsh/plugins
