@@ -6,7 +6,6 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 # Shortened aliases
 alias vim="nvim"
-alias ff="fastfetch"
 alias cl="clear"
 
 # Colorize commands when possible.
