@@ -1,6 +1,6 @@
 # Enable colours and change prompt
 autoload -U colors && colors	# Load colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
@@ -17,11 +17,11 @@ alias \
 	ccat="highlight --out-format=ansi" \
 	ip="ip -color=auto"
 
+# Cache stuff
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
+# Zsh plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-eval "$(starship init zsh)"
