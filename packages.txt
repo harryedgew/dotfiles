@@ -14,4 +14,3 @@ kate
 htop
 papirus-icon-theme
 dnfdragora
-fastfetch
