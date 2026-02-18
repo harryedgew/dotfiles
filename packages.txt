@@ -8,7 +8,6 @@ zsh
 git
 wget
 curl
-kitty
 keepassxc
 vlc
 kate
