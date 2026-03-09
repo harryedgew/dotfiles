@@ -14,8 +14,8 @@ alias \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
-	ip="ip -color=auto"
-
+	ip="ip -color=auto" \
+	update="sudo dnf up -y && sudo flatpak update -y"
 # Cache stuff
 HISTFILE=~/.histfile
 HISTSIZE=1000
