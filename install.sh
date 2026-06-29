@@ -12,6 +12,9 @@ sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-releas
 # Install my packages
 xargs sudo dnf install -y < packages.txt
 
+# Install flatpaks
+xargs sudo flatpak install -y < flatpaks.txt
+
 # Zsh plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/zsh-autosuggestions

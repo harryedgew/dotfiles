@@ -1,6 +1,7 @@
 thunderbird
 qbittorrent
 brave-browser
+firefox
 steam
 vim
 nvim
@@ -8,7 +9,6 @@ zsh
 git
 wget
 curl
-keepassxc
 vlc
 kate
 htop
