@@ -2,7 +2,6 @@ thunderbird
 qbittorrent
 brave-browser
 steam
-vim
 nvim
 zsh
 git
