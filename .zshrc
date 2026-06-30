@@ -1,5 +1,5 @@
 # Set environment variable
-export SSH_AUTH_SOCK=/home/harry/.bitwarden-ssh-agent.sock
+# export SSH_AUTH_SOCK=/home/harry/.bitwarden-ssh-agent.sock
 
 # Enable colours and change prompt
 autoload -U colors && colors	# Load colors
