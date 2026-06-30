@@ -1,7 +1,6 @@
 thunderbird
 qbittorrent
 brave-browser
-firefox
 steam
 vim
 nvim
